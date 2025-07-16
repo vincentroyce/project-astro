@@ -1,27 +1,16 @@
 ---
-title: 'My First Blog Post'
+layout: ../../layouts/MarkdownLayout.astro
+title: '🚀 Starting My Astro Journey: A Beginner’s Dive into Modern Web Development'
 pubDate: 2022-07-01
-description: 'This is the first post of my new Astro blog.'
-author: 'Astro Learner'
+description: [
+    'Welcome to my very first blog post! I’m excited (and a bit nervous) to start this blogging journey — and what better way to begin than by documenting something I’m just getting into: Astro!',
+    'If you haven’t heard of Astro yet, it’s a modern frontend framework that’s been making waves in the web development world. It’s designed for building fast, content-focused websites using a “islands architecture” approach. In simple terms: Astro helps you ship less JavaScript, making your websites faster and easier to maintain.'
+]
+introduction: 'Hey there! 👋'
+author: 'Sheridan Embat'
+occupation: 'Blogger'
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
     alt: 'The Astro logo on a dark background with a pink glow.'
-tags: ["astro", "blogging", "learning in public"]
+tags: ["✨ Zero JS by default – It only loads JavaScript when it’s really needed.", "📦 Bring your own framework – You can mix and match React, Svelte, Vue, etc.", "⚡ Blazing fast performance – Static site generation feels super snappy.","🧠 Great for learning – The structure is clean and beginner-friendly."]
 ---
-# My First Blog Post
-
-Published on: 2022-07-01
-
-Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
-
-## What I've accomplished
-
-1. **Installing Astro**: First, I created a new Astro project and set up my online accounts.
-
-2. **Making Pages**: I then learned how to make pages by creating new `.astro` files and placing them in the `src/pages/` folder.
-
-3. **Making Blog Posts**: This is my first blog post! I now have Astro pages and Markdown posts!
-
-## What's next
-
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
