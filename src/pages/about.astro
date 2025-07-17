@@ -4,81 +4,33 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 const pageTitle = "About Me";
 
-const identity = {
-  firstName: "Astro Learner",
-  country: "Philippines",
-  occupation: "Software Developer",
-  hobbies: ["gaming", "reading", "sleeping"],
-};
-
-const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
-
-const happy = true;
-const finished = false;
-const goal = 3;
-
-const skillColor = "navy";
-const fontWeight = "bold";
-const textCase = "uppercase";
+const skills = ["✨ HTML", "📄 CSS", "🚀 JavaScript", "💡 React", "✨ Astro", "📄 Writing Docs"];
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <style define:vars={{ skillColor, fontWeight, textCase }}>
-    h1 {
-      color: purple;
-      font-size: 4rem;
-    }
-    .skill {
-      color: var(--skillColor);
-      font-weight: var(--fontWeight);
-      text-transform: var(--textCase);
-    }
-  </style>
-  <h1>{pageTitle}</h1>
-  <h2>... and my new Astro site!</h2>
+  <section class="bg-white dark:bg-gray-900">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+        <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
+            <h1 class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">About Me</h1>
+            <p class="font-light text-gray-500 sm:text-2xl dark:text-gray-400">Welcome to the stage of history.</>
+        </div>
+        <div class="mx-auto max-w-screen-sm  lg:mb-16 mb-8">
+          <p class="my-10 font-light text-gray-500 sm:text-xl dark:text-gray-400">Hey there! 👋 I'm Astro Learner, a passionate web enthusiast currently diving deep into the world of modern web development. Right now, I'm learning Astro — a blazing-fast static site builder that’s changing how I think about building for the web.</p>
+          <p class="my-10 font-light text-gray-500 sm:text-xl dark:text-gray-400">This blog is my personal space where I document my learning journey, share tips and insights, and showcase what I’ve been building. Whether it’s experimenting with components, optimizing for performance, or just trying something new, you’ll find it all here.</p>
+          <p class="my-10 font-light text-gray-500 sm:text-xl dark:text-gray-400">I created this site not just to learn Astro, but to have a space where I can grow, reflect, and hopefully help others along the way.</p>
+      </div>
+        <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
 
-  <p>
-    I am working through Astro's introductory tutorial. This is the second page
-    on my website, and it's the first one I built myself!
-  </p>
-
-  <p>
-    This site will update as I complete more of the tutorial, so keep checking
-    back and see how my journey is going!
-  </p>
-
-  <p>Here are a few facts about me:</p>
-  <ul>
-    <li>My name is {identity.firstName}.</li>
-    <li>
-      I live in {identity.country} and I work as a {identity.occupation}.
-    </li>
-    {
-      identity.hobbies.length >= 2 && (
-        <li>
-          Two of my hobbies are:{" "}
-          {`${identity.hobbies[0]} and ${identity.hobbies[1]}`}
-        </li>
-      )
-    }
-  </ul>
-  <p>My skills are:</p>
-  <ul>
-    {skills.map((skill) => <li class="skill">{skill}</li>)}
-  </ul>
-  {happy && <p>I am happy to be learning Astro!</p>}
-
-  {finished && <p>I finished this tutorial!</p>}
-
-  {
-    goal === 3 ? (
-      <p>My goal is to finish in 3 days.</p>
-    ) : (
-      <p>My goal is not 3 days.</p>
-    )
-  }
-  <script
-    is:inline
-    src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"
-  ></script>
+        { skills &&
+          <>
+              <h1 class="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">What i've learned so far:</h1>
+              <ol>
+                  {skills.map((tag: string) => <li class="font-light text-gray-500 sm:text-xl dark:text-gray-400">{tag}</li>)}
+              </ol>            
+          </>    
+          
+      }
+        </div>
+    </div>
+  </section>
 </BaseLayout>
