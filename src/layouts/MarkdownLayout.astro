@@ -1,8 +1,11 @@
 ---
 import "../styles/styles.css";
 import BaseLayout from "./BaseLayout.astro";
+import moment from 'moment';
 const { frontmatter } = Astro.props;
 const pageTitle = "My Astro Journey";
+
+const fromNow = moment(frontmatter.pubDate).fromNow()
 ---
 <!-- 
 Install the "flowbite-typography" NPM package to apply styles and format the article content: 
@@ -40,7 +43,7 @@ URL: https://flowbite.com/docs/components/typography/
               </p>
               <p class="text-base text-gray-500 dark:text-gray-400">
                 <time datetime="2022-02-08" title="February 8th, 2022"
-                  >{frontmatter.pubDate.toString().slice(0, 10)}</time
+                  >{fromNow}</time
                 >
               </p>
             </div>
