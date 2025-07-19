@@ -68,11 +68,11 @@ URL: https://flowbite.com/docs/components/typography/
           alt={frontmatter.image.alt}
         />
       </figure>
-      { frontmatter.tags &&
+      { frontmatter.road &&
         <>
             <h1 class="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">What i've learned so far:</h1>
             <ol>
-                {frontmatter.tags.map((tag: string) => <li>{tag}</li>)}
+                {frontmatter.road.map((road: string) => <li>{road}</li>)}
             </ol>            
         </>    
         

@@ -14,5 +14,6 @@ occupation: 'Blogger'
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
     alt: 'The Astro logo on a dark background with a pink glow.'
-tags: ["✨ Zero JS by default – It only loads JavaScript when it’s really needed.", "📦 Bring your own framework – You can mix and match React, Svelte, Vue, etc.", "⚡ Blazing fast performance – Static site generation feels super snappy.","🧠 Great for learning – The structure is clean and beginner-friendly."]
+road: ["✨ Zero JS by default – It only loads JavaScript when it’s really needed.", "📦 Bring your own framework – You can mix and match React, Svelte, Vue, etc.", "⚡ Blazing fast performance – Static site generation feels super snappy.","🧠 Great for learning – The structure is clean and beginner-friendly."]
+tags: ["beginner", "astro", "framework", "friendly"]
 ---

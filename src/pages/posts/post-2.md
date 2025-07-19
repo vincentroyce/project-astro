@@ -9,7 +9,8 @@ image:
     url: "https://docs.astro.build/assets/arc.webp"
     alt: "The Astro logo on a dark background with a purple gradient arc."
 pubDate: 2025-07-10
-tags: ["🗂️ Creating my first multi-page site","📄 Learning about layouts and how they make reusing code easier", "🎨 Playing with some basic styling (yes, I added Tailwind!)"]
+road: ["🗂️ Creating my first multi-page site","📄 Learning about layouts and how they make reusing code easier", "🎨 Playing with some basic styling (yes, I added Tailwind!)"]
 type: "Article"
 summary: "Are you learning Astro too? Or maybe you’re a bit ahead of me — I’d love any tips or cool things you’ve discovered. Drop a comment or reach out on Twitter or GitHub."
+tags: ["beginner", "astro", "blogging", "dynamic", "styling"]
 ---

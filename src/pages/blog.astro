@@ -21,7 +21,7 @@ const allPosts = Object.values(
         </p>
       </div>
       <div class="grid gap-8 lg:grid-cols-2">
-        {allPosts.map(post => <BlogCard frontmatter={post} />)}
+        {allPosts.map((post) => <BlogCard properties={post} />)}
       </div>
     </div>
   </section>
