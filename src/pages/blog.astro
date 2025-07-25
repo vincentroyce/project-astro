@@ -1,12 +1,10 @@
 ---
-import "../styles/styles.css";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import BlogCard from "../layouts/BlogCard.astro";
 const allPosts = Object.values(
   import.meta.glob("./posts/*.md", { eager: true })
 );
 ---
-
 <BaseLayout pageTitle="My Blog">
   <section class="bg-white dark:bg-gray-900">
     <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
