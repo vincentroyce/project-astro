@@ -57,8 +57,8 @@ URL: https://flowbite.com/docs/components/typography/
       </header>
       <p class="lead">{frontmatter.introduction}</p>
       {
-        frontmatter.description.map((description: string) => (
-          <p>{description}</p>
+        frontmatter.paragraphs.map((paragraph: string) => (
+          <p>{paragraph}</p>
         ))
       }
 
