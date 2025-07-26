@@ -35,7 +35,7 @@ const { pageTitle } = Astro.props;
   </head>
   <body>
     <div class="min-h-dvh flex flex-col">
-      <Navigation />
+      <Navigation client:load/>
       <div class="grow bg-white dark:bg-gray-900">
         <slot />
       </div>
