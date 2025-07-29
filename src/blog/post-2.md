@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MarkdownLayout.astro
+# layout: ../../layouts/MarkdownLayout.astro
 title: "🛠️ Learning Astro – Part 2: Building My First Page & Understanding Layouts"
 author: BG Grey
 occupation: GoGo Muffin Player

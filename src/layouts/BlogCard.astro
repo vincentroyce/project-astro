@@ -2,7 +2,8 @@
 import moment from "moment";
 
 const { properties } = Astro.props;
-const fromNow = moment(properties.frontmatter.pubDate).fromNow();
+console.log(properties)
+const fromNow = moment(properties.data.pubDate).fromNow();
 ---
 
 <article
@@ -23,31 +24,31 @@ const fromNow = moment(properties.frontmatter.pubDate).fromNow();
           clip-rule="evenodd"></path><path
           d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z"></path></svg
       >
-      {properties.frontmatter.type}
+      {properties.data.type}
     </span>
     <span class="text-sm">{fromNow}</span>
   </div>
   <h2
     class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
   >
-    <a href={properties.url}>{properties.frontmatter.title}</a>
+    <a href={`/posts/${properties.id}`}>{properties.data.title}</a>
   </h2>
   <p class="mb-5 font-light text-gray-500 dark:text-gray-400">
-    {properties.frontmatter.summary}
+    {properties.data.summary}
   </p>
   <div class="flex justify-between items-center">
     <div class="flex items-center space-x-4">
       <img
         class="w-7 h-7 rounded-full"
-        src={properties.frontmatter.image.url}
-        alt={properties.frontmatter.image.alt}
+        src={properties.data.image.url}
+        alt={properties.data.image.alt}
       />
       <span class="font-medium dark:text-white">
-        {properties.frontmatter.author || "Anonymous"}
+        {properties.data.author || "Anonymous"}
       </span>
     </div>
     <a
-      href={properties.url}
+      href={`/posts/${properties.id}`}
       class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline"
     >
       Read more

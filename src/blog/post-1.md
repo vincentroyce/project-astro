@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MarkdownLayout.astro
+# layout: ../../layouts/MarkdownLayout.astro
 title: '🚀 Starting My Astro Journey: A Beginner’s Dive into Modern Web Development'
 pubDate: 2022-07-01
 type: "Article"

@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MarkdownLayout.astro
+# layout: ../../layouts/MarkdownLayout.astro
 title: "✍️ Learning Astro – Part 3: Markdown, Content Collections & My First Blog Post!"
 author: Astro Learner
 occupation: Student
