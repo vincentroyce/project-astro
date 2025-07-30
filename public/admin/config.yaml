@@ -1,7 +1,7 @@
 backend:
-  name: github
+  name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
-  repo: vincentroyce/project-astro
+  # repo: vincentroyce/project-astro
   commit_messages:
   create: Create {{collection}} “{{slug}}”
   update: Update {{collection}} “{{slug}}”
