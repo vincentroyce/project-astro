@@ -1,0 +1,59 @@
+backend:
+  name: github
+  branch: main # Branch to update (optional; defaults to master)
+  repo: vincentroyce/project-astro
+  commit_messages:
+  create: Create {{collection}} “{{slug}}”
+  update: Update {{collection}} “{{slug}}”
+  delete: Delete {{collection}} “{{slug}}”
+  uploadMedia: Upload “{{path}}”
+  deleteMedia: Delete “{{path}}”
+  openAuthoring: '{{message}}'
+media_folder: "public/static/images/uploads" # Media files will be stored in the repo under images/uploads
+public_folder: "static/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+collections:
+  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog" # Used in the UI
+    folder: "src/blog/collections" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "pubDate", widget: "datetime" }
+      - { label: "Type", name: "type", widget: "string" }
+      - { label: "Summary", name: "summary", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Introduction", name: "introduction", widget: "string" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Occupation", name: "occupation", widget: "string" }      
+      - { label: "Featured Image", name: "image", widget: "object", fields: [
+          { label: 'Url', name: 'url', widget: 'image' },
+          { label: 'Alt', name: 'alt', widget: 'string' }
+        ]}
+      - label: "Roadmaps" 
+        name: "road" 
+        widget: "list" 
+        allow_add: true 
+        field:  
+          label: "Road"
+          name: "road"
+          widget: "string"
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        allow_add: true
+        field: 
+          label: "Tag"
+          name: "tag"
+          widget: "string"
+      - label: "Paragraphs"
+        name: "paragraphs"
+        widget: "list"
+        allow_add: true
+        field: 
+          label: "Paragraph"
+          name: "paragraph"
+          widget: "string"
+      
+site_url: https://project-astro.netlify.app       
