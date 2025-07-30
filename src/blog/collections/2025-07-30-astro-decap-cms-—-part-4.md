@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Astro & Decap CMS — Part 4
+title: ✍️  Astro & Decap CMS — Part 4
 pubDate: 2025-07-30T13:22:00.000+08:00
 type: Tutorial
 summary: Part 4 of our series dives deeper into dynamic content and advanced CMS
