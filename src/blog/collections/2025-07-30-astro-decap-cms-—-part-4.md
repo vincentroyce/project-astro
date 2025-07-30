@@ -12,7 +12,7 @@ introduction: Continuing from Part 3, we now focus on handling arrays, images,
 author: BG Grey
 occupation: GGM Enthusiast
 image:
-  url: static/images/uploads/genos.jpg
+  url: /static/images/uploads/genos.jpg
   alt: genos
 road:
   - Configure list widgets
