@@ -25,6 +25,7 @@ tags:
   - cms
   - tutorial
   - series
+  - testing cms
 paragraphs:
   - In Part 4, we’re focusing on creating structured blog content using Decap
     CMS in an Astro project.
