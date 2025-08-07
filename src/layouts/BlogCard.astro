@@ -2,7 +2,7 @@
 import moment from "moment";
 
 const { properties } = Astro.props;
-console.log(properties)
+
 const fromNow = moment(properties.data.pubDate).fromNow();
 ---
 

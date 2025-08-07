@@ -12,5 +12,6 @@ export default defineConfig({
   },
 
   site: "https://project-astro.netlify.app/",
-  integrations: [preact()]
+  integrations: [preact()],
+  prefetch: true
 });
