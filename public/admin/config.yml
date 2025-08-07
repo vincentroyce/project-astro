@@ -3,7 +3,7 @@ backend:
   name: github
   branch: main # Branch to update (optional; defaults to master)
   repo: vincentroyce/project-astro
-  base_url: https://project-astro.netlify.app/
+  base_url: https://api.netlify.com/
   auth_endpoint: /auth
   commit_messages:
   create: Create {{collection}} “{{slug}}”
