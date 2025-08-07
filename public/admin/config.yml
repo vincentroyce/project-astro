@@ -4,6 +4,8 @@ backend:
   branch: main # Branch to update (optional; defaults to master)
   repo: vincentroyce/project-astro
   commit_messages:
+  base_url: https://api.netlify.com/
+  auth_endpoint: /auth
   create: Create {{collection}} “{{slug}}”
   update: Update {{collection}} “{{slug}}”
   delete: Delete {{collection}} “{{slug}}”
