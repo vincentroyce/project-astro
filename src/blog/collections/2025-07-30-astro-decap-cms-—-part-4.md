@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: ✍️  Astro & Decap CMS
-pubDate: 2025-08-04T10:45:00.000+08:00
+pubDate: 2025-08-08T11:13:00.000+08:00
 type: Tutorial
 summary: Part 4 of our series dives deeper into dynamic content and advanced CMS
   integration.
