@@ -38,4 +38,8 @@ const { posts } = Astro.props;
       </div>
     </div>
   </section>
+  <script is:inline define:vars={{posts, tag}}>
+    console.log("posts: ", posts)
+    console.log("tag: ", tag)
+  </script>
 </BaseLayout>
